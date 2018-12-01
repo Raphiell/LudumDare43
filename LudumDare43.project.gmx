@@ -42,6 +42,7 @@
       <script>scripts\ExampleItems.gml</script>
       <script>scripts\ListRecipes.gml</script>
       <script>scripts\TagCount.gml</script>
+      <script>scripts\AddRandomItem.gml</script>
     </scripts>
     <scripts name="Game Start">
       <script>scripts\DeclareGlobals.gml</script>
@@ -67,6 +68,9 @@
       <script>scripts\PositionRecipes.gml</script>
       <script>scripts\CreateDemon.gml</script>
     </scripts>
+    <scripts name="Demons">
+      <script>scripts\PositionDemons.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_tag</object>
@@ -79,10 +83,9 @@
       <object>objects\obj_item</object>
     </objects>
     <objects name="Controllers">
-      <object>objects\controller_crafting</object>
       <object>objects\controller_master</object>
-      <object>objects\controller_inventory</object>
       <object>objects\controller_click</object>
+      <object>objects\controller_demon</object>
     </objects>
     <object>objects\obj_demon</object>
   </objects>
