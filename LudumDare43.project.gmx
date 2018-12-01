@@ -3,9 +3,9 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="1" name="datafiles">
+  <datafiles number="2" name="datafiles">
     <datafile>
-      <name>items.dat</name>
+      <name>recipes.txt</name>
       <exists>-1</exists>
       <size>0</size>
       <exportAction>2</exportAction>
@@ -19,7 +19,7 @@
           <CopyToMask>9223372036854775807</CopyToMask>
         </Config>
       </ConfigOptions>
-      <filename>items.dat</filename>
+      <filename>recipes.txt</filename>
     </datafile>
   </datafiles>
   <NewExtensions/>
@@ -34,23 +34,38 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\AddItemToInventory.gml</script>
-    <script>scripts\DeclareGlobals.gml</script>
-    <script>scripts\CreateItem.gml</script>
-    <script>scripts\ListItems.gml</script>
-    <script>scripts\MoveItemToCrafting.gml</script>
-    <script>scripts\ExampleItems.gml</script>
-    <script>scripts\CalculateTags.gml</script>
-    <script>scripts\Array.gml</script>
-    <script>scripts\CheckRecipes.gml</script>
-    <script>scripts\LoadItems.gml</script>
+    <scripts name="Test Scripts">
+      <script>scripts\ListItems.gml</script>
+      <script>scripts\ExampleItems.gml</script>
+    </scripts>
+    <scripts name="Game Start">
+      <script>scripts\DeclareGlobals.gml</script>
+      <script>scripts\LoadRecipes.gml</script>
+    </scripts>
+    <scripts name="Tags">
+      <script>scripts\CalculateTags.gml</script>
+    </scripts>
+    <scripts name="Items">
+      <script>scripts\MoveItemToCrafting.gml</script>
+      <script>scripts\AddItemToInventory.gml</script>
+      <script>scripts\CreateItem.gml</script>
+      <script>scripts\CheckRecipes.gml</script>
+    </scripts>
+    <scripts name="Utility">
+      <script>scripts\Array.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_plank</object>
-    <object>objects\item</object>
-    <object>objects\controller_crafting</object>
-    <object>objects\controller_master</object>
-    <object>objects\tag</object>
+    <object>objects\obj_tag</object>
+    <object>objects\obj_recipe</object>
+    <objects name="Items">
+      <object>objects\obj_plank</object>
+      <object>objects\obj_item</object>
+    </objects>
+    <objects name="Controllers">
+      <object>objects\controller_crafting</object>
+      <object>objects\controller_master</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

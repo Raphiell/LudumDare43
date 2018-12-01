@@ -1,0 +1,11 @@
+recipe Lesser Demon
+sprite spr_lesser_demon
+tag Alive
+tag Wood
+end
+
+recipe Steel Demon
+sprite spr_steel_demon
+tag Metal
+tag Large
+end

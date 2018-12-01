@@ -9,7 +9,5 @@ var object = argument[0]
 // Create a new item and add it to the inventory
 var newItem = instance_create(0,0,object);
 
-//AddItemToInventory(newItem)
-
 // Return the created item
 return newItem

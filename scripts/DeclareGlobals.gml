@@ -19,7 +19,7 @@ tags = Array("Wood", "Metal", "Small", "Large", "Alive")
 for(i = 0; i < array_length_1d(tags); i++)
 {
     // Create the tag
-    newTag = instance_create(0,0,tag)
+    newTag = instance_create(0,0,obj_tag)
     
     // Setup it's name, so it can be easily referenced later
     newTag.name = tags[i]
@@ -30,3 +30,6 @@ for(i = 0; i < array_length_1d(tags); i++)
     // Add it to the global map
     ds_map_add(tagMap, tags[i], newTag)
 }
+
+// Recipes
+globalvar recipes;
