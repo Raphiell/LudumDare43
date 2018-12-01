@@ -1,9 +1,9 @@
 /// @description Recalculates the tag counts of items in the crafting area
 
 // Reset all tags
-for(i = 0; i < ds_list_size(tagList); i++)
+for(i = 0; i < ds_list_size(tagMap); i++)
 {
-    current_tag = ds_list_find_value(tagList, i)
+    current_tag = ds_list_find_value(tagMap, i)
     current_tag.count = 0
 }
 

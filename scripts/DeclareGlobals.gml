@@ -9,8 +9,8 @@ globalvar crafting;
 crafting = ds_list_create()
 
 // Possible tags
-globalvar tagList;
-tagList = ds_map_create()
+globalvar tagMap;
+tagMap = ds_map_create()
 
 // Setup tags list
 tags = Array("Wood", "Metal", "Small", "Large", "Alive")
@@ -23,8 +23,10 @@ for(i = 0; i < array_length_1d(tags); i++)
     
     // Setup it's name, so it can be easily referenced later
     newTag.name = tags[i]
+
+    // Initialize count to 0
     newTag.count = 0
     
     // Add it to the global map
-    ds_map_add(tagList, tags[i], newTag)
+    ds_map_add(tagMap, tags[i], newTag)
 }
