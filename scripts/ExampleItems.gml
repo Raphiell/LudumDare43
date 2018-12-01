@@ -9,6 +9,7 @@ tag2 = ds_map_find_value(tagMap, "Metal")
 tag3 = ds_map_find_value(tagMap, "Small")
 tag4 = ds_map_find_value(tagMap, "Large")
 tag5 = ds_map_find_value(tagMap, "Alive")
+show_message("Created: " + tag1.name)
 
 AddItemToInventory(CreateItem(n1, sprite, tag1, tag3))
 AddItemToInventory(CreateItem(n2, sprite, tag2, tag3))

@@ -28,6 +28,8 @@
             <string>// Move an item to the crafting area
 
 itemToMove = ds_list_find_value(inventory, 0)
+show_message(itemToMove.name)
+show_message(string(ds_list_size(inventory)))
 MoveItemToCrafting(itemToMove)
 
 // Check recipes
@@ -101,12 +103,20 @@ MoveItemToCrafting(itemToMove)
           <argument>
             <kind>1</kind>
             <string>// Show final tag counts
-show_message(
-"Metal " + string(t_metal) +
-"Wood " + string(t_wood) + 
-"Small " + string(t_small) +
-"Large " + string(t_large) +
-"Alive " + string(t_alive))
+// For every existing tag
+
+nextTag = ds_map_find_first(tagMap)
+
+message = ""
+
+// While we still have tags to go
+while(!is_undefined(nextTag))
+{
+    message += nextTag + ": " + string(tagMap[? nextTag].count) + ", "
+    nextTag = ds_map_find_next(tagMap, nextTag)
+}
+
+show_message(message)
 </string>
           </argument>
         </arguments>
