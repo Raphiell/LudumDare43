@@ -22,6 +22,7 @@ if(ds_list_size(inventory) > 0 && ds_list_find_index(inventory, itemToMove) != -
     
     // Recheck the recipes
     CheckRecipes()
+    
 } else
 // If there are still items to move, and the item you're moving is in the crafting
 if(ds_list_size(crafting) > 0 && ds_list_find_index(crafting, itemToMove) != -1)

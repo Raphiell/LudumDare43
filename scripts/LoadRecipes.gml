@@ -25,13 +25,16 @@ while(!file_text_eof(file))
         // Initialize tags array
         recipe.tags[0] = ""
         
+        // Setup default as unavailable
+        recipe.available = false
+        
         // Add to global array
         recipes[iterator] = recipe
     }
     // Else if it's a sprite line
     else if(string_pos("sprite", line) != 0)
     {
-        recipes[iterator].sprite_index = string_copy(line, 8, string_length(line) - 9)
+        recipes[iterator].sprite_index = asset_get_index(string_copy(line, 8, string_length(line) - 9))
     }
     // Else if it's a tag
     else if(string_pos("ftag", line) != 0)

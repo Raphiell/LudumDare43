@@ -29,6 +29,8 @@
     <sprite>sprites\spr_pl_item2</sprite>
     <sprite>sprites\spr_pl_item3</sprite>
     <sprite>sprites\spr_pl_item4</sprite>
+    <sprite>sprites\spr_pl_lesser_demon</sprite>
+    <sprite>sprites\spr_pl_steel_demon</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_pl_1</background>
@@ -52,13 +54,16 @@
       <script>scripts\ToggleItemBetweenCraftingInventory.gml</script>
       <script>scripts\AddItemToInventory.gml</script>
       <script>scripts\CreateItem.gml</script>
-      <script>scripts\CheckRecipes.gml</script>
       <script>scripts\PositionItemsInInventory.gml</script>
       <script>scripts\PositionItemsInCrafting.gml</script>
       <script>scripts\RepositionItems.gml</script>
     </scripts>
     <scripts name="Utility">
       <script>scripts\Array.gml</script>
+    </scripts>
+    <scripts name="Recipes">
+      <script>scripts\CheckRecipes.gml</script>
+      <script>scripts\PositionRecipes.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
