@@ -14,11 +14,16 @@
     <background>background\bg_pl_1</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\AddItemToInventory.gml</script>
+    <script>scripts\DeclareGlobals.gml</script>
+    <script>scripts\CreateItem.gml</script>
+  </scripts>
   <objects name="objects">
     <objects name="items">
       <object>objects\item</object>
-      <object>objects\pl_item1</object>
     </objects>
+    <object>objects\controller_crafting</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
