@@ -1,11 +1,11 @@
 recipe Lesser Demon
 sprite spr_lesser_demon
-tag Alive
+ftag Alive
 tag Wood
 end
 
 recipe Steel Demon
 sprite spr_steel_demon
-tag Metal
+ftag Metal
 tag Large
 end

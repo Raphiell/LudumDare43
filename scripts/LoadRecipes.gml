@@ -19,22 +19,29 @@ while(!file_text_eof(file))
         recipe = instance_create(0,0,obj_recipe)
         
         // Set it's name
-        recipe.name = string_copy(line, 7, string_length(line) - 7)
+        recipe.name = string_copy(line, 7, string_length(line) - 8)
         
-        show_message(recipe.name)
+        // Initialize tags array
+        recipe.tags[0] = ""
         
-        // Create a new recipe object
+        // Add to global array
         recipes[iterator] = recipe
     }
     // Else if it's a sprite line
     else if(string_pos("sprite", line) != 0)
     {
-        recipes[iterator].sprite_index = string_copy(line, 7, string_length(line) - 7)
+        recipes[iterator].sprite_index = string_copy(line, 7, string_length(line) - 8)
     }
     // Else if it's a tag
+    else if(string_pos("ftag", line) != 0)
+    {
+        // Add the first tag
+        recipes[iterator].tags[0] = string_copy(line, 5, string_length(line) - 6)
+    }
     else if(string_pos("tag", line) != 0)
     {
-        show_message(string_copy(line, 4, string_length(line) - 4))
+        // Add a new tag to the end of the required tags
+        recipes[iterator].tags[array_length_1d(recipes[iterator].tags)] = string_copy(line, 4, string_length(line) - 5)
     }
     // Else if it's the end of the recipe
     else if(string_pos("end", line) != 0)

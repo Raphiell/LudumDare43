@@ -37,6 +37,7 @@
     <scripts name="Test Scripts">
       <script>scripts\ListItems.gml</script>
       <script>scripts\ExampleItems.gml</script>
+      <script>scripts\ListRecipes.gml</script>
     </scripts>
     <scripts name="Game Start">
       <script>scripts\DeclareGlobals.gml</script>
