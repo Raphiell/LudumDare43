@@ -31,8 +31,9 @@
 // It needs to evaluate what's in this area, and accordingly show the result you can get
 
 ////// Code
-name = "Garry";
-CreateItem(name, "Tag")
+name = "Garry"
+sprite = spr_pl_item3
+CreateItem(name, sprite, "Cool")
 </string>
           </argument>
         </arguments>
