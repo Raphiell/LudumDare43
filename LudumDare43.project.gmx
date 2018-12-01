@@ -24,6 +24,7 @@
       <object>objects\item</object>
     </objects>
     <object>objects\controller_crafting</object>
+    <object>objects\controller_master</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
