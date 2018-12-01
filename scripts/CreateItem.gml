@@ -1,25 +1,13 @@
 /// @description Creates an item and sets it's properties, returns the id of the item created
-/// @function CreateItem(name, sprite, tags...)
-/// @param {string} name Name of the item
-/// @param {sprite} sprite Sprite to display
-/// @param {string} tags Any amount of tags
+/// @function CreateItem(object)
+/// @param {object} object Object to create
+
 
 // Arguments
-var name = argument[0]
-var sprite = argument[1]
-var tags
-for(i = 2; i < argument_count; i++)
-{
-    tags[i - 2] = argument[i]
-}
+var object = argument[0]
 
 // Create a new item and add it to the inventory
-var newItem = instance_create(0,0,item);
-
-// Setup it's properties
-newItem.name = name
-newItem.tags = tags
-newItem.sprite_index = sprite
+var newItem = instance_create(0,0,object);
 
 //AddItemToInventory(newItem)
 

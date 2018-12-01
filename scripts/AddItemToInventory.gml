@@ -1,6 +1,6 @@
 // This script will add a specific item to the global inventory
 
-// Passed variables
+// Passed item
 var itemToAdd = argument0
 
 // Push onto list

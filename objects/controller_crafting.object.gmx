@@ -28,8 +28,6 @@
             <string>// Move an item to the crafting area
 
 itemToMove = ds_list_find_value(inventory, 0)
-show_message(itemToMove.name)
-show_message(string(ds_list_size(inventory)))
 MoveItemToCrafting(itemToMove)
 
 // Check recipes
