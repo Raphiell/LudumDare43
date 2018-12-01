@@ -147,7 +147,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>ListRecipes</script>
+            <script>ListItems</script>
           </argument>
           <argument>
             <kind>0</kind>

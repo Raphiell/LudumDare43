@@ -38,6 +38,7 @@
       <script>scripts\ListItems.gml</script>
       <script>scripts\ExampleItems.gml</script>
       <script>scripts\ListRecipes.gml</script>
+      <script>scripts\TagCount.gml</script>
     </scripts>
     <scripts name="Game Start">
       <script>scripts\DeclareGlobals.gml</script>
@@ -51,6 +52,7 @@
       <script>scripts\AddItemToInventory.gml</script>
       <script>scripts\CreateItem.gml</script>
       <script>scripts\CheckRecipes.gml</script>
+      <script>scripts\PositionItemsInInventory.gml</script>
     </scripts>
     <scripts name="Utility">
       <script>scripts\Array.gml</script>
@@ -66,6 +68,7 @@
     <objects name="Controllers">
       <object>objects\controller_crafting</object>
       <object>objects\controller_master</object>
+      <object>objects\controller_inventory</object>
     </objects>
   </objects>
   <rooms name="rooms">

@@ -19,6 +19,7 @@ while(!file_text_eof(file))
         recipe = instance_create(0,0,obj_recipe)
         
         // Set it's name
+        // For string copies, the first number is to cut out the "element" (recipe) and the second number cuts out any space after the value + newline
         recipe.name = string_copy(line, 7, string_length(line) - 8)
         
         // Initialize tags array
