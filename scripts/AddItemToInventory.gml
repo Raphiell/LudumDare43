@@ -6,3 +6,5 @@ var itemToAdd = argument0
 // Push onto list
 ds_list_add(inventory, itemToAdd)
 
+// Move items around
+RepositionItems()

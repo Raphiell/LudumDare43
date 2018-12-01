@@ -53,6 +53,8 @@
       <script>scripts\CreateItem.gml</script>
       <script>scripts\CheckRecipes.gml</script>
       <script>scripts\PositionItemsInInventory.gml</script>
+      <script>scripts\PositionItemsInCrafting.gml</script>
+      <script>scripts\RepositionItems.gml</script>
     </scripts>
     <scripts name="Utility">
       <script>scripts\Array.gml</script>
