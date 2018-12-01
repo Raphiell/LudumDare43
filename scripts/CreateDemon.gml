@@ -16,3 +16,5 @@ demon.sprite_index = sprite
 // Add to demon list
 ds_list_add(demons, demon)
 
+// Test
+show_message(ds_list_find_value(demons, 0).name)

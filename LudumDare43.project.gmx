@@ -57,6 +57,7 @@
       <script>scripts\PositionItemsInInventory.gml</script>
       <script>scripts\PositionItemsInCrafting.gml</script>
       <script>scripts\RepositionItems.gml</script>
+      <script>scripts\ClearCrafting.gml</script>
     </scripts>
     <scripts name="Utility">
       <script>scripts\Array.gml</script>

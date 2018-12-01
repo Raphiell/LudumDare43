@@ -4,7 +4,7 @@ var verticalMargin = 6
 var x_pos = 64 
 var y_pos = 128
 
-// For each item in inventory
+// For each item in crafting
 for(i = 0; i < ds_list_size(crafting); i++)
 {
     // Current item

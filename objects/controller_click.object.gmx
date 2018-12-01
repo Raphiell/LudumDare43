@@ -26,8 +26,28 @@
           <argument>
             <kind>1</kind>
             <string>/// Add the item clicked on to the crafting area
-var itemToMove = instance_position(mouse_x, mouse_y, obj_item)
-ToggleItemBetweenCraftingInventory(itemToMove)
+var object = instance_position(mouse_x, mouse_y, all)
+
+// If you clicked on nothing
+if(object == -4)
+{
+
+} else
+// If you clicked on an item
+if(object_get_parent(object.object_index) == obj_item)
+{
+    ToggleItemBetweenCraftingInventory(object)
+} else 
+// Else if you clicked on a recipe
+if(object.object_index == obj_recipe)
+{
+    // Clear out all the items in crafting
+    ClearCrafting()
+    
+    // Create the demon you clicked on
+    CreateDemon(object)
+}
+    
 </string>
           </argument>
         </arguments>
