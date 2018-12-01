@@ -33,3 +33,7 @@ for(i = 0; i < array_length_1d(tags); i++)
 
 // Recipes
 globalvar recipes;
+
+// Demons you've created
+globalvar demons;
+demons = ds_list_create()

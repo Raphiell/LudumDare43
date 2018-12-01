@@ -64,6 +64,7 @@
     <scripts name="Recipes">
       <script>scripts\CheckRecipes.gml</script>
       <script>scripts\PositionRecipes.gml</script>
+      <script>scripts\CreateDemon.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -82,6 +83,7 @@
       <object>objects\controller_inventory</object>
       <object>objects\controller_click</object>
     </objects>
+    <object>objects\obj_demon</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
