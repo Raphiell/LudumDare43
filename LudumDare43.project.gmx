@@ -28,6 +28,7 @@
     <sprite>sprites\spr_pl_item1</sprite>
     <sprite>sprites\spr_pl_item2</sprite>
     <sprite>sprites\spr_pl_item3</sprite>
+    <sprite>sprites\spr_pl_item4</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_pl_1</background>
@@ -48,7 +49,7 @@
       <script>scripts\CalculateTags.gml</script>
     </scripts>
     <scripts name="Items">
-      <script>scripts\MoveItemToCrafting.gml</script>
+      <script>scripts\ToggleItemBetweenCraftingInventory.gml</script>
       <script>scripts\AddItemToInventory.gml</script>
       <script>scripts\CreateItem.gml</script>
       <script>scripts\CheckRecipes.gml</script>
@@ -65,12 +66,16 @@
     <object>objects\obj_recipe</object>
     <objects name="Items">
       <object>objects\obj_plank</object>
+      <object>objects\obj_pipe</object>
+      <object>objects\obj_timmy</object>
+      <object>objects\obj_cottage</object>
       <object>objects\obj_item</object>
     </objects>
     <objects name="Controllers">
       <object>objects\controller_crafting</object>
       <object>objects\controller_master</object>
       <object>objects\controller_inventory</object>
+      <object>objects\controller_click</object>
     </objects>
   </objects>
   <rooms name="rooms">

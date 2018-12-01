@@ -19,7 +19,7 @@ tags = Array("Wood", "Metal", "Small", "Large", "Alive")
 for(i = 0; i < array_length_1d(tags); i++)
 {
     // Create the tag
-    newTag = instance_create(0,0,obj_tag)
+    newTag = instance_create(-32,-32,obj_tag)
     
     // Setup it's name, so it can be easily referenced later
     newTag.name = tags[i]

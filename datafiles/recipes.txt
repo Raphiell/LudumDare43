@@ -1,5 +1,5 @@
 recipe Lesser Demon
-sprite spr_lesser_demon
+sprite spr_pl_item2
 ftag Alive
 tag Wood
 end
