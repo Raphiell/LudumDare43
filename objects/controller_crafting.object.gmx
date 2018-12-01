@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="7" enumb="2">
+    <event eventtype="9" enumb="32">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,16 +25,88 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Setup crafting controller
+            <string>// Move an item to the crafting area
 
-// This controller needs to maintain a list of items in the crafting area
-// It needs to evaluate what's in this area, and accordingly show the result you can get
+itemToMove = ds_list_find_value(inventory, 0)
+MoveItemToCrafting(itemToMove)
 
-////// Code
-name = "Garry"
-sprite = spr_pl_item3
-AddItemToInventory(CreateItem(name, sprite, "Cool"))
+// Check recipes
 
+// Grab all values
+// Wood, small
+
+
+
+// Metal, small, magnetic
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="17">
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>CalculateTags</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Show final tag counts
+show_message(
+"Metal " + string(t_metal) +
+"Wood " + string(t_wood) + 
+"Small " + string(t_small) +
+"Large " + string(t_large) +
+"Alive " + string(t_alive))
 </string>
           </argument>
         </arguments>

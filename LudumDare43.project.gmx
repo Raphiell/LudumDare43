@@ -18,13 +18,17 @@
     <script>scripts\AddItemToInventory.gml</script>
     <script>scripts\DeclareGlobals.gml</script>
     <script>scripts\CreateItem.gml</script>
+    <script>scripts\ListItems.gml</script>
+    <script>scripts\MoveItemToCrafting.gml</script>
+    <script>scripts\ExampleItems.gml</script>
+    <script>scripts\CalculateTags.gml</script>
+    <script>scripts\Array.gml</script>
   </scripts>
   <objects name="objects">
-    <objects name="items">
-      <object>objects\item</object>
-    </objects>
+    <object>objects\item</object>
     <object>objects\controller_crafting</object>
     <object>objects\controller_master</object>
+    <object>objects\tag</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
