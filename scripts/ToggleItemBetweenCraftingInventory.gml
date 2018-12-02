@@ -6,7 +6,7 @@
 var itemToMove = argument0
 
 // If there are still items to move, and the item you're moving is in the inventory
-if(ds_list_size(inventory) > 0 && ds_list_find_index(inventory, itemToMove) != -1)
+if(ds_list_size(inventory) > 0 && ds_list_size(crafting) < 3 && ds_list_find_index(inventory, itemToMove) != -1)
 {
     // Remove the item from the inventory
     ds_list_delete(inventory, ds_list_find_index(inventory, itemToMove))
@@ -24,7 +24,7 @@ if(ds_list_size(inventory) > 0 && ds_list_find_index(inventory, itemToMove) != -
     CheckRecipes()
     
 } else
-// If there are still items to move, and the item you're moving is in the crafting
+// If there are still items to move, but we are not at the crafting cap, and the item you're moving is in the crafting
 if(ds_list_size(crafting) > 0 && ds_list_find_index(crafting, itemToMove) != -1)
 {
     // Remove the item from the inventory

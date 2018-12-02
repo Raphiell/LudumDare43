@@ -37,3 +37,20 @@ globalvar recipes;
 // Demons you've created
 globalvar demons;
 demons = ds_list_create()
+
+// Maximums
+globalvar crafting_max;
+crafting_max = 3
+
+globalvar inventory_max;
+inventory_max = 4
+
+globalvar recipe_max;
+recipe_max = 4
+
+// Positions in the inventory and recipe area
+globalvar inventory_position;
+inventory_position = 0;
+
+globalvar recipe_position;
+recipe_position = 0;

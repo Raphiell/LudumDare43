@@ -13,8 +13,8 @@ for(i = 0; i < array_length_1d(recipes); i++)
     // Current recipe
     recipe = recipes[i]
     
-    // If the recipe is available
-    if(recipe.available)
+    // If the recipe is available, and handle scrolling
+    if(recipe.available && positionIterator < (recipe_max) && i >= recipe_position)
     {
         recipe.x = x_pos + (recipe.sprite_width + horizontalMargin) * (positionIterator)
         recipe.y = y_pos

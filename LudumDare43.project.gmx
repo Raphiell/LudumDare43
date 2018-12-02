@@ -35,6 +35,7 @@
     <sprite>sprites\spr_demon_flying</sprite>
     <sprite>sprites\spr_demon_magnetic</sprite>
     <sprite>sprites\spr_summoning_circle</sprite>
+    <sprite>sprites\spr_arrow_button</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_pl_1</background>
@@ -63,6 +64,7 @@
       <script>scripts\PositionItemsInCrafting.gml</script>
       <script>scripts\RepositionItems.gml</script>
       <script>scripts\ClearCrafting.gml</script>
+      <script>scripts\MoveInventoryPosition.gml</script>
     </scripts>
     <scripts name="Utility">
       <script>scripts\Array.gml</script>
@@ -71,6 +73,7 @@
       <script>scripts\CheckRecipes.gml</script>
       <script>scripts\PositionRecipes.gml</script>
       <script>scripts\CreateDemon.gml</script>
+      <script>scripts\MoveRecipePosition.gml</script>
     </scripts>
     <scripts name="Demons">
       <script>scripts\PositionDemons.gml</script>
@@ -92,6 +95,10 @@
       <object>objects\controller_demon</object>
     </objects>
     <object>objects\obj_demon</object>
+    <object>objects\obj_arrow_up</object>
+    <object>objects\obj_arrow_right</object>
+    <object>objects\obj_arrow_left</object>
+    <object>objects\obj_arrow_down</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
