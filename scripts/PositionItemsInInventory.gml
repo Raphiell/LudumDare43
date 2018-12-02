@@ -9,5 +9,5 @@ for(i = 0; i < ds_list_size(inventory); i++)
     // Current item
     item = ds_list_find_value(inventory, i)
     item.x = x_pos 
-    item.y = y_pos + (item.sprite_height + verticalMargin) * (i + 1)
+    item.y = y_pos + (item.sprite_height + verticalMargin) * (i)
 }

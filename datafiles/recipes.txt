@@ -1,12 +1,24 @@
-recipe Lesser Demon
-sprite spr_pl_lesser_demon
-ftag Alive
-tag Wood
-tag Large
+recipe Fire Demon
+sprite spr_demon_fire
+ftag Wood
+tag Small
 end
 
 recipe Steel Demon
-sprite spr_pl_steel_demon
+sprite spr_demon_steel
 ftag Metal
 tag Large
+end
+
+recipe Flying Demon
+sprite spr_demon_flying
+ftag Light
+tag Small
+end
+
+recipe Magnetic Demon
+sprite spr_demon_magnetic
+ftag Metal
+tag Magnetic
+tag Small
 end

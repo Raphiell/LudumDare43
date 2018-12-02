@@ -25,12 +25,16 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_pl_item1</sprite>
-    <sprite>sprites\spr_pl_item2</sprite>
-    <sprite>sprites\spr_pl_item3</sprite>
-    <sprite>sprites\spr_pl_item4</sprite>
-    <sprite>sprites\spr_pl_lesser_demon</sprite>
-    <sprite>sprites\spr_pl_steel_demon</sprite>
+    <sprite>sprites\spr_item_plank</sprite>
+    <sprite>sprites\spr_item_metal</sprite>
+    <sprite>sprites\spr_item_propellor</sprite>
+    <sprite>sprites\spr_item_magnet</sprite>
+    <sprite>sprites\spr_demon_fire</sprite>
+    <sprite>sprites\spr_demon_steel</sprite>
+    <sprite>sprites\sprite_sheet</sprite>
+    <sprite>sprites\spr_demon_flying</sprite>
+    <sprite>sprites\spr_demon_magnetic</sprite>
+    <sprite>sprites\spr_summoning_circle</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_pl_1</background>
@@ -77,9 +81,9 @@
     <object>objects\obj_recipe</object>
     <objects name="Items">
       <object>objects\obj_plank</object>
-      <object>objects\obj_pipe</object>
-      <object>objects\obj_timmy</object>
-      <object>objects\obj_cottage</object>
+      <object>objects\obj_metal</object>
+      <object>objects\obj_propellor</object>
+      <object>objects\obj_magnet</object>
       <object>objects\obj_item</object>
     </objects>
     <objects name="Controllers">

@@ -9,6 +9,6 @@ for(i = 0; i < ds_list_size(crafting); i++)
 {
     // Current item
     item = ds_list_find_value(crafting, i)
-    item.x = x_pos + (item.sprite_width + horizontalMargin) * (i + 1)
+    item.x = x_pos + (item.sprite_width + horizontalMargin) * (i)
     item.y = y_pos
 }

@@ -16,14 +16,14 @@ for(i = 0; i < array_length_1d(recipes); i++)
     // If the recipe is available
     if(recipe.available)
     {
-        recipe.x = x_pos + (recipe.sprite_width + horizontalMargin) * (positionIterator + 1)
+        recipe.x = x_pos + (recipe.sprite_width + horizontalMargin) * (positionIterator)
         recipe.y = y_pos
         positionIterator++
     }
     else
     {
         // Otherwise hide it
-        recipe.x = -32
-        recipe.y = -32
+        recipe.x = -2000
+        recipe.y = -2000
     }
 }

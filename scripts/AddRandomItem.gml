@@ -6,12 +6,12 @@ switch(irandom(3))
         AddItemToInventory(CreateItem(obj_plank))
         break;
     case 1:
-        AddItemToInventory(CreateItem(obj_pipe))
+        AddItemToInventory(CreateItem(obj_metal))
         break;
     case 2:
-        AddItemToInventory(CreateItem(obj_timmy))
+        AddItemToInventory(CreateItem(obj_propellor))
         break;
     case 3:
-        AddItemToInventory(CreateItem(obj_cottage))
+        AddItemToInventory(CreateItem(obj_magnet))
         break;
 }

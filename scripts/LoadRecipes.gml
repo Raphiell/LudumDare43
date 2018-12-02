@@ -16,7 +16,7 @@ while(!file_text_eof(file))
     if(string_pos("recipe", line) != 0)
     {
         // New recipe
-        recipe = instance_create(-32,-32,obj_recipe)
+        recipe = instance_create(-2000,-2000,obj_recipe)
         
         // Set it's name
         // For string copies, the first number is to cut out the "element" (recipe) and the second number cuts out any space after the value + newline

@@ -13,7 +13,7 @@ globalvar tagMap;
 tagMap = ds_map_create()
 
 // Setup tags list
-tags = Array("Wood", "Metal", "Small", "Large", "Alive")
+tags = Array("Wood", "Metal", "Small", "Large", "Alive", "Light", "Magnetic")
 
 // Add new tag objects to global map
 for(i = 0; i < array_length_1d(tags); i++)
